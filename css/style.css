@@ -1,0 +1,137 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #E0E8FF;
+    
+}
+
+main > section {
+    
+    border-radius: 20px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 4px 4px 50px 4px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.music-listener{
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    height: 170px;
+    background: url(../images/illustration-hero.svg) no-repeat center;
+    background-size: cover;
+}
+
+.annual-plan {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.annual-plan a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 900;
+    color: #5852AB;
+    margin-right: 40px;
+    padding-top: 10px;
+}
+
+.annual-plan a:hover {
+    text-decoration: none;
+    color: #A8A2E1;
+}
+
+.annual-plan-second-col {
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 40px;
+}
+
+.annual-plan-second-col > li:first-child {
+    font-weight: 700;
+}
+
+.annual-plan-second-col > li:last-child {
+    color: #8D94A4;
+}
+
+
+
+h1, p, .proceed-pay, .cancel-order {
+    text-align: center;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.6;
+    padding: 0 2.5rem 1rem;
+    color: #8D94A4;
+}
+
+.proceed-pay {
+    padding: 2rem 0;
+}
+
+.cancel-order {
+    padding: 1rem 0 2rem 0;
+}
+.proceed-pay > span {
+    background-color: #382AE1;
+    padding: 1rem 4rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.proceed-pay > span:hover {
+    background-color: #766CF1;
+    cursor: pointer;
+}
+
+.cancel-order > span{
+    color: #8D94A4;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.cancel-order > span:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 374px) {
+    main > section {
+        width: 100%;
+    max-width: 300px;
+    }
+
+    p {
+        padding: 0 1rem 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #E0E8FF;
+    }
+}

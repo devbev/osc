@@ -34,7 +34,7 @@ main > section {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    background-color: #ebedf3;
+    background-color: hsl(225, 100%, 98%);
     width: 100%;
     max-width: 300px;
     padding: 10px 0;
